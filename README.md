@@ -29,5 +29,15 @@ commit Transaction
 confirm results
 End
 ## Pseudocode
-test
+BEGIN TRANSACTION
+    SET TRANSACTION ISOLATION LEVEL SERIALIZABLE
+    
+    SELECT DATABASE classicmodels
+    
+    START TRANSACTION
+    
+  
+    latest_order_number = MAX(orderNumber) FROM orders
+    new_order_number = latest_order_number + 1
+    
 ## Support for the Sales Departments' Report

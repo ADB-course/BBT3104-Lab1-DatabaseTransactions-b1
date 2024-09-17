@@ -15,6 +15,7 @@ start transaction
 Calculate Order Number
 Calculate New Order
 create SAVEPOINT before product 1
+insert product 1 
 ## Pseudocode
 test
 ## Support for the Sales Departments' Report

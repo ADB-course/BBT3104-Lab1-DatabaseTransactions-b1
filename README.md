@@ -47,4 +47,6 @@ BEGIN TRANSACTION
      quantity_in_stock = SELECT quantityInStock FROM products WHERE productCode = 'S18_1749'
     UPDATE products SET quantityInStock = quantity_in_stock - 2724 WHERE productCode = 'S18_1749'
      SAVEPOINT before_product_2
+     INSERT INTO orderdetails (orderNumber, productCode, quantityOrdered, priceEach, orderLineNumber)
+    VALUES (new_order_number, 'S18_2248', 540, 55.09, 2)
 ## Support for the Sales Departments' Report

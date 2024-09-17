@@ -71,3 +71,7 @@ CREATE TABLE installments (
     balanceRemaining DECIMAL(10, 2),
     FOREIGN KEY (orderNumber) REFERENCES orders(orderNumber)
 );
+
+ALTER TABLE payments
+ADD COLUMN installmentID INT,
+ADD FOREIGN KEY (installmentID) REFERENCES installments(installmentID);

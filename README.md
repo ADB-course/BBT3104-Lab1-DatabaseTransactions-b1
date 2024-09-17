@@ -9,6 +9,7 @@
 
 ## Flowchart
 start 
+set isolation level: SERILAZABLE
 ## Pseudocode
 test
 ## Support for the Sales Departments' Report

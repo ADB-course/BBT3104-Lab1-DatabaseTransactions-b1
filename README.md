@@ -19,6 +19,7 @@ insert product 1
 create SAVEPOINT before product 2
 insert product 2  
 update stock for product 2 
+Rollback to SAVEPOINT before product 2 
 ## Pseudocode
 test
 ## Support for the Sales Departments' Report

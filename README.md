@@ -12,7 +12,8 @@ start
 set isolation level: SERILAZABLE
 select database: classicmodels
 start transaction
-Calculate Order Number 
+Calculate Order Number
+Calculate New Order
 ## Pseudocode
 test
 ## Support for the Sales Departments' Report

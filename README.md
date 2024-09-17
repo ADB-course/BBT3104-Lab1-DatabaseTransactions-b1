@@ -25,6 +25,7 @@ insert product 3
 Update Stock for Product 3 
 Receive Payment
 commit Transaction
+confirm results
 ## Pseudocode
 test
 ## Support for the Sales Departments' Report

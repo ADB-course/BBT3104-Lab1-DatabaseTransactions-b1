@@ -16,7 +16,8 @@ Calculate Order Number
 Calculate New Order
 create SAVEPOINT before product 1
 insert product 1 
-create SAVEPOINT before product 2 
+create SAVEPOINT before product 2
+insert product 2  
 ## Pseudocode
 test
 ## Support for the Sales Departments' Report

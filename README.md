@@ -60,4 +60,6 @@ BEGIN TRANSACTION
      INSERT INTO payments (customerNumber, checkNumber, paymentDate, amount)
     VALUES (145, 'JM555210', CURRENT_DATE, 300000)
         COMMIT TRANSACTION
+        SELECT * FROM orderdetails WHERE orderNumber = new_order_number
+END
 ## Support for the Sales Departments' Report

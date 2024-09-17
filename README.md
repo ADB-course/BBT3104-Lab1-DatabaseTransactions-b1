@@ -23,6 +23,7 @@ Rollback to SAVEPOINT before product 2
 create a SAVEPOINT before product 3 
 insert product 3 
 Update Stock for Product 3 
+Receive Payment
 ## Pseudocode
 test
 ## Support for the Sales Departments' Report

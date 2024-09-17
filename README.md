@@ -41,4 +41,5 @@ BEGIN TRANSACTION
     new_order_number = latest_order_number + 1
     INSERT INTO orders (orderNumber, orderDate, requiredDate, shippedDate, status, customerNumber)
     VALUES (new_order_number, CURRENT_DATE, DATE_ADD(CURRENT_DATE, INTERVAL 3 DAY), DATE_ADD(CURRENT_DATE, INTERVAL 2 DAY), 'In Process', 145)
+     SAVEPOINT before_product_1
 ## Support for the Sales Departments' Report

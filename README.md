@@ -57,4 +57,6 @@ BEGIN TRANSACTION
     VALUES (new_order_number, 'S12_1099', 68, 95.34, 3)
     quantity_in_stock = SELECT quantityInStock FROM products WHERE productCode = 'S12_1099'
     UPDATE products SET quantityInStock = quantity_in_stock - 68 WHERE productCode = 'S12_1099'
+     INSERT INTO payments (customerNumber, checkNumber, paymentDate, amount)
+    VALUES (145, 'JM555210', CURRENT_DATE, 300000)
 ## Support for the Sales Departments' Report

@@ -63,3 +63,11 @@ BEGIN TRANSACTION
         SELECT * FROM orderdetails WHERE orderNumber = new_order_number
 END
 ## Support for the Sales Departments' Report
+CREATE TABLE installments (
+    installmentID INT AUTO_INCREMENT PRIMARY KEY,
+    orderNumber INT,
+    paymentDate DATE,
+    amount DECIMAL(10, 2),
+    balanceRemaining DECIMAL(10, 2),
+    FOREIGN KEY (orderNumber) REFERENCES orders(orderNumber)
+);

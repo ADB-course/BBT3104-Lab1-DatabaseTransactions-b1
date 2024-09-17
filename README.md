@@ -10,6 +10,7 @@
 ## Flowchart
 start 
 set isolation level: SERILAZABLE
+select database: classicmodels
 ## Pseudocode
 test
 ## Support for the Sales Departments' Report

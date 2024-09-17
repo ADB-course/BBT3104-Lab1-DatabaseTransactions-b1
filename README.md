@@ -12,6 +12,7 @@ start
 set isolation level: SERILAZABLE
 select database: classicmodels
 start transaction
+
 ## Pseudocode
 test
 ## Support for the Sales Departments' Report

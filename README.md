@@ -26,6 +26,7 @@ Update Stock for Product 3
 Receive Payment
 commit Transaction
 confirm results
+End
 ## Pseudocode
 test
 ## Support for the Sales Departments' Report

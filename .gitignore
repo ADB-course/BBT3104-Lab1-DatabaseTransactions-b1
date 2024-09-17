@@ -162,3 +162,4 @@ cython_debug/
 #.idea/
 
 /container-volumes/mysql/var-lib-mysql
+image.png

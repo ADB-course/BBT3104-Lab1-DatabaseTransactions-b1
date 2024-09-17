@@ -75,3 +75,14 @@ CREATE TABLE installments (
 ALTER TABLE payments
 ADD COLUMN installmentID INT,
 ADD FOREIGN KEY (installmentID) REFERENCES installments(installmentID);
+
+
+SELECT
+    o.orderNumber,
+    o.customerNumber,
+    SUM(i.amount) AS totalPaid,
+    (o.totalAmount - SUM(i.amount)) AS balanceRemaining
+FROM orders o
+LEFT JOIN installments i ON o.orderNumber = i.orderNumber
+GROUP BY o.orderNumber
+HAVING balanceRemaining > 0;
